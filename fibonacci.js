@@ -40,9 +40,10 @@ for (let fibo = 0; fibo < 18; fibo++) {  // why less than 18 ? because it starts
 
 console.log(0);
 console.log(1);
-let count = 2; // How many numbers we have written.
+let count = 2; // Keeps track of how many numbers have been printed
 
-function fibonacci(prev1, prev2) {
+
+function fibonacci(prev1, prev2) { // Function that keeps printing next Fibonacci numbers. Stops after printing 20 total numbers
     if (count <= 19) {
         const newFibo = prev1 + prev2;
         console.log(newFibo);
